@@ -9,6 +9,10 @@ import { orderCards } from "@/content/orders";
 import { navItems } from "@/content/nav";
 import { ru } from "@/content/ru";
 
+export function generateStaticParams() {
+  return orderCards.map((order) => ({ id: order.id }));
+}
+
 type OrderDetailProps = {
   params: Promise<{ id: string }>;
 };
