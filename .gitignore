@@ -40,3 +40,9 @@ next-env.d.ts
 
 # secrets
 .cursor/mcp.json
+
+# local run logs
+.serve.log
+.serve-err.log
+.build-pages.log
+.pages-test.log
